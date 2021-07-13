@@ -1,0 +1,45 @@
+<center>
+<b>ENTER NUMBERS</b><br>
+<input id=m1 /> <br><br>
+<input id=m2 /> <br><br>
+
+<input type=button value=+ onclick="add()"/>
+<input type=button value=- onclick="sub()"/>
+<input type=button value=* onclick="mul()"/>
+<input type=button value=/ onclick="d()"/><br><br>
+<output id=out1 />
+</center>
+
+<script>
+function add()
+{
+  a=parseInt(m1.value);
+  b=parseInt(m2.value);
+  c=a+b;
+  out1.value='addition:'+c;
+}
+function sub()
+{
+  a=parseInt(m1.value);
+  b=parseInt(m2.value);
+  c=a-b;
+  out1.value='subtraction:'+c;
+}
+function mul()
+{
+  a=parseInt(m1.value);
+  b=parseInt(m2.value);
+  c=a*b;
+  out1.value='multiplication:'+c;
+}
+function d()
+{
+  a=parseInt(m1.value);
+  b=parseInt(m2.value);
+  c=a/b;
+  out1.value='division:'+c;
+}
+
+
+</script>
+
